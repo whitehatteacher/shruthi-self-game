@@ -13,7 +13,7 @@ class Form {
         this.titleMessage.position(235, 10);
     }
     setElementsStyle() {
-        this.titleMesssage.class("gameTitle");
+      //  this.titleMesssage.class("gameTitle");
         this.input.class("customInput");
         this.playButton.class("customButton");
         this.greetingMessage.class("greeting");
@@ -24,7 +24,6 @@ class Form {
         this.greetingMessage.hide();
     }
 
-
     handleMousePressed() {
         this.playButton.mousePressed(() => {
             this.input.hide();
@@ -33,7 +32,7 @@ class Form {
                 `Hello, ${this.input.value()} 
         </br> Wait till the other player join`;
             this.greetingMessage.html(grtMsg);
-        })
+    
         var titleMsg =
             `Horse Riding Race`;
         this.titleMessage.html(titleMsg);
@@ -43,11 +42,15 @@ class Form {
         player.addPlayers();
         player.updateCount(playerCount);
         player.getDistance();
+        });
     }
+
+    
     display() {
         this.setElementsPosition();
-        this.handleMousePressed();
         this.setElementsStyle();
+        this.handleMousePressed();
+       
     }
 
 }
