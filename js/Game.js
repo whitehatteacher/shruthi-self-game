@@ -44,6 +44,7 @@ class Game {
     food = new Group();
     powerCoins = new Group();
     obstacles = new Group();
+    
     var obstaclesPositions = [
       { y: height / 2 + 250, x: width - 800, image: obstacle2Image },
       { y: height / 2 - 150, x: width - 1300, image: obstacle1Image },
@@ -65,8 +66,8 @@ class Game {
       { y: height / 2 - 180, x: width - 5500, image: obstacle3Image }
     ];
     // Adding food sprite in the game
-    this.addSprites(food1, 4, food1, 0.02);
-    this.addSprites(food2, 4, food2, 0.02);
+    this.addSprites(food, 4, food1, 0.02);
+   // this.addSprites(food2, 4, food2, 0.02);
 
     // Adding coin sprite in the game
     this.addSprites(powerCoins, 18, powerCoinImage, 0.09);
