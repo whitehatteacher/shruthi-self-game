@@ -23,6 +23,7 @@ var horse2;
 var food1;
 var food2;
 var horses = [];
+var powerCoins,obstacles,food;
 
 function preload() {
   bg = loadImage("./assets/bg.jpg");
